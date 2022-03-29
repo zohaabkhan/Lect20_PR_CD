@@ -18,7 +18,7 @@ data = response.json()
 headlines = []
 
 for i in range(0, 10):
-    print(data['response']['docs'][i]['headline']['main'])
+    return(data['response']['docs'][i]['headline']['main'])
     headlines.append(data['response']['docs'][i]['headline']['main'])
 
 @app.route("/")
